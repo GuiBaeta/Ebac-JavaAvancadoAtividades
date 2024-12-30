@@ -52,24 +52,28 @@ public class Pilha {
 	public static void main(String[] args) {
 		Pilha pilha = new Pilha();
 		
-		System.out.println(pilha.isEmpty());
-		
+		System.out.println("A pilha está vazia: " + pilha.isEmpty());
+		System.out.println("Adicionar os inteiros 20 e 40 à pilha: ");
 		pilha.push(20);
 		pilha.push(40);
 	
-		System.out.println(pilha.getElementos());
-		System.out.println(pilha.topo);
-		System.out.println(pilha.top());
-		System.out.println(pilha.isEmpty());
-		System.out.println(pilha.size());
+		System.out.println("Verificar valor no topo da pilha: " + pilha.top());
+		System.out.println("A pilha está vazia: " + pilha.isEmpty());
+		System.out.println("Tamanho da pilha: " + pilha.size());
 		
+		System.out.println("Adicionar o inteiro 60 à pilha: ");
+		pilha.push(60);
+		System.out.println("Verificar valor no topo da pilha: " + pilha.top());
+		
+		
+		System.out.println("Deletei um elemento da pilha usando o pop:");
 		pilha.pop();
+		System.out.println("Verificar valor no topo da pilha: " + pilha.top());;
 		
-		System.out.println("Usando o pop");
-		System.out.println(pilha.getElementos());
-		System.out.println(pilha.topo);
-		System.out.println(pilha.top());
-		System.out.println(pilha.size());
+		System.out.println("Deletei mais elemento da pilha usando o pop:");
+		pilha.pop();
+		System.out.println("Verificar valor no topo da pilha: " + pilha.top());;
+		System.out.println("Tamanho da pilha:" + pilha.size());
 		
 		
 	}
